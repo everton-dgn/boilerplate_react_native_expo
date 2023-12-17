@@ -32,7 +32,9 @@ package-lock.json
 *.pem
 
 # local env files
-.env*.local
+.env
+eas.json
+app.json
 
 # typescript
 *.tsbuildinfo
