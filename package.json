@@ -12,6 +12,8 @@
     "android": "expo run:android",
     "ios": "expo run:ios",
     "web": "expo start --web",
+    "build:ios": "eas build --platform ios",
+    "build:android": "eas build --platform android",
     "lint": "eslint --cache src --ext ts,tsx,json --max-warnings=0",
     "lint:fix": "eslint --cache --fix src --ext ts,tsx,json",
     "format": "prettier --cache --write src",
@@ -32,7 +34,7 @@
     "expo": "^49.0.21",
     "expo-splash-screen": "~0.20.5",
     "expo-status-bar": "~1.6.0",
-    "expo-system-ui": "^2.4.0",
+    "expo-system-ui": "~2.4.0",
     "react": "18.2.0",
     "react-native": "0.72.6"
   },
