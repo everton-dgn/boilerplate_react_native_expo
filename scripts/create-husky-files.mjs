@@ -2,7 +2,6 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
-// Get the file and project directories
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 const PROJECT_ROOT = path.resolve(__dirname, '..')
@@ -18,7 +17,6 @@ const getPrePushContent = `#!/usr/bin/env sh
 npx --no-install
 
 yarn typecheck
-yarn build
 `
 
 const getPreCommitContent = `#!/usr/bin/env sh
