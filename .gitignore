@@ -33,8 +33,6 @@ package-lock.json
 
 # local env files
 .env
-eas.json
-app.json
 
 # typescript
 *.tsbuildinfo

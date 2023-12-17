@@ -1,0 +1,19 @@
+{
+  "cli": {
+    "version": ">= 5.9.2"
+  },
+  "build": {
+    "production": {},
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "test": {}
+  },
+  "submit": {
+    "production": {}
+  }
+}
