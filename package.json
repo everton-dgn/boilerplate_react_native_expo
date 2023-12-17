@@ -18,6 +18,8 @@
     "check:format": "prettier --cache --check src",
     "typecheck": "tsc --noEmit",
     "check:update": "yarn upgrade-interactive --latest",
+    "update:expo": "yarn add expo@latest",
+    "update:fix": "npx expo install --fix",
     "prepare": "node scripts/create-husky-files.mjs && husky install"
   },
   "husky": {
@@ -27,12 +29,13 @@
     }
   },
   "dependencies": {
-    "expo": "~49.0.15",
+    "expo": "^49.0.21",
     "expo-status-bar": "~1.6.0",
     "react": "18.2.0",
     "react-native": "0.72.6"
   },
   "devDependencies": {
+    "@babel/core": "^7.20.0",
     "@commitlint/cli": "^18.2.0",
     "@commitlint/config-conventional": "^18.1.0",
     "@types/node": "^20.8.10",
@@ -49,12 +52,11 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-native": "^4.1.0",
     "eslint-plugin-sonarjs": "^0.21.0",
+    "husky": "^8.0.3",
     "lint-staged": "^15.0.2",
     "prettier": "^3.0.3",
-    "husky": "^8.0.3",
-    "@babel/core": "^7.20.0",
-    "eslint-plugin-react-native": "^4.1.0",
     "typescript": "^5.3.3"
   }
 }
