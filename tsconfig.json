@@ -30,6 +30,6 @@
     "incremental": true
   },
   "extends": "expo/tsconfig.base",
-  "include": ["**/*.ts", "**/*.tsx", "src/@types/**/*.d.ts"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/@types/**/*.d.ts"],
   "exclude": ["node_modules"]
 }
