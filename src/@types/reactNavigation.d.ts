@@ -1,11 +1,9 @@
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack'
+import type { ParamList } from 'routes/types'
 
 declare global {
   namespace ReactNavigation {
-    interface RootParamList {
-      Home: undefined
-      Example: undefined
-    }
+    interface RootParamList extends ParamList {}
   }
 }
 
