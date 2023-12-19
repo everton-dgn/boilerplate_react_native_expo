@@ -1,5 +1,7 @@
-import { Button, Text, View } from 'react-native'
+import { View } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
+import Text from 'components/atoms/Text'
+import TouchableOpacity from 'components/atoms/TouchableOpacity'
 import S from './styles'
 
 const Home = () => {
@@ -8,8 +10,8 @@ const Home = () => {
   return (
     <View style={S.container}>
       <Text>Page Home</Text>
-      <Button
-        title="Go to Example"
+      <TouchableOpacity
+        label="Go to Example"
         onPress={() => {
           navigate('Example')
         }}
