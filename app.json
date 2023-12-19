@@ -25,9 +25,6 @@
       },
       "package": "com.boilerplate.boilerplate"
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    },
     "extra": {
       "eas": {
         "projectId": "677af9af-8ca8-4392-8b35-ddbfc544bc41"
