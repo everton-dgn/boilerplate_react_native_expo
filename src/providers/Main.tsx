@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+import { Ionicons } from '@expo/vector-icons'
 import {
   Poppins_400Regular,
   Poppins_500Medium,
@@ -19,7 +20,8 @@ const ManProvider = ({ children }: { children: ReactNode }) => {
   const [fontsLoaded, fontError] = useFonts({
     Poppins_400Regular,
     Poppins_500Medium,
-    Poppins_600SemiBold
+    Poppins_600SemiBold,
+    ...Ionicons.font
   })
 
   const onLayoutRootView = useCallback(() => {
