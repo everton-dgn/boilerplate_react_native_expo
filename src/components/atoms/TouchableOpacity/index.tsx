@@ -1,9 +1,9 @@
 import { TouchableOpacity as RnTouchableOpacity } from 'react-native'
-import Text from 'components/atoms/Text'
+import { Text } from '../Text'
 import type { TouchableOpacityProps } from './types'
 import S from './styles'
 
-const TouchableOpacity = ({
+export const TouchableOpacity = ({
   label,
   style,
   ...props
@@ -12,5 +12,3 @@ const TouchableOpacity = ({
     <Text style={S.text}>{label}</Text>
   </RnTouchableOpacity>
 )
-
-export default TouchableOpacity

@@ -13,6 +13,4 @@ const App = () => (
   </ManProvider>
 )
 
-export default App
-
 registerRootComponent(App)

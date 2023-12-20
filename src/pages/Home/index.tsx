@@ -1,10 +1,9 @@
 import { View } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
-import Text from 'components/atoms/Text'
-import TouchableOpacity from 'components/atoms/TouchableOpacity'
+import { Text, TouchableOpacity } from 'components/atoms'
 import S from './styles'
 
-const Home = () => {
+export const Home = () => {
   const { navigate } = useNavigation()
 
   return (
@@ -19,5 +18,3 @@ const Home = () => {
     </View>
   )
 }
-
-export default Home
