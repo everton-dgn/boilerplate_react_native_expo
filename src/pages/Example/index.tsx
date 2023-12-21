@@ -1,21 +1,22 @@
 import { View } from 'react-native'
 
-import { useNavigation } from '@react-navigation/native'
-
 import { Text, TouchableOpacity } from 'components/atoms'
+
+import useExample from 'infra/store/example'
 
 import S from './styles'
 
 export const Example = () => {
-  const { navigate } = useNavigation()
+  const { stateExample } = useExample()
+  const title = stateExample.isActive ? 'Active' : 'Inactive'
 
   return (
     <View style={S.container}>
-      <Text>Page Example</Text>
+      <Text>Page Example - {title}</Text>
       <TouchableOpacity
-        label="Go to Home"
+        label="Update Global State Persistent"
         onPress={() => {
-          navigate('Home')
+          stateExample.setIsActive()
         }}
       />
     </View>

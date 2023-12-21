@@ -8,7 +8,14 @@ import {
   useFonts
 } from '@expo-google-fonts/poppins'
 import { Ionicons } from '@expo/vector-icons'
+import { enableReactNativeComponents } from '@legendapp/state/config/enableReactNativeComponents'
+import { enableReactTracking } from '@legendapp/state/config/enableReactTracking'
 import * as SplashScreen from 'expo-splash-screen'
+
+import 'infra/store/configPersist'
+
+enableReactNativeComponents()
+enableReactTracking({ auto: true })
 
 const S = StyleSheet.create({
   container: {
