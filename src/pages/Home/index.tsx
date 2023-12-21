@@ -1,8 +1,11 @@
 import { View } from 'react-native'
-import { useNavigation } from '@react-navigation/native'
-import { Text, TouchableOpacity } from 'components/atoms'
-import S from './styles'
+
 import { Ionicons } from '@expo/vector-icons'
+import { useNavigation } from '@react-navigation/native'
+
+import { Text, TouchableOpacity } from 'components/atoms'
+
+import S from './styles'
 
 export const Home = () => {
   const { navigate } = useNavigation()

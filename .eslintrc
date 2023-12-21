@@ -25,7 +25,9 @@
     "@typescript-eslint",
     "sonarjs",
     "promise",
-    "prettier"
+    "prettier",
+    "import",
+    "eslint-plugin-import-helpers"
   ],
   "extends": [
     "standard-with-typescript",
@@ -38,7 +40,9 @@
     "plugin:import/typescript",
     "plugin:sonarjs/recommended",
     "prettier",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -49,6 +53,31 @@
     "sourceType": "module"
   },
   "rules": {
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+        "groups": [
+          ["/^react$/", "/^react-native$/"],
+          ["/^@expo/", "/^expo/", "module"],
+          "/^(pages|components|routes|providers)/",
+          ["/hooks/", "/helperFunctions/"],
+          ["/infra/", "/data/", "/validation/"],
+          "/^assets/",
+          "/testHelpers/",
+          "/types/",
+          ["/^theme$/", "/styles/"],
+          ["parent", "sibling", "index"]
+        ],
+        "alphabetize": { "order": "asc", "ignoreCase": true }
+      }
+    ],
+    "import/no-unresolved": [2, { "commonjs": true, "amd": true }],
+    "import/named": 2,
+    "import/namespace": 2,
+    "import/default": 2,
+    "import/export": 2,
+    "import/no-duplicates": "error",
     "@typescript-eslint/prefer-nullish-coalescing": "off",
     "@typescript-eslint/strict-boolean-expressions": "off",
     "@typescript-eslint/explicit-function-return-type": "off",

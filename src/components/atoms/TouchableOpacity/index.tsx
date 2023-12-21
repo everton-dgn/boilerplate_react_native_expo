@@ -1,7 +1,10 @@
 import { TouchableOpacity as RnTouchableOpacity } from 'react-native'
-import { Text } from '../Text'
+
 import type { TouchableOpacityProps } from './types'
+
 import S from './styles'
+
+import { Text } from '../Text'
 
 export const TouchableOpacity = ({
   label,

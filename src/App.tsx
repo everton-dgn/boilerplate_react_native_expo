@@ -1,8 +1,9 @@
-import { StatusBar } from 'expo-status-bar'
 import { registerRootComponent } from 'expo'
-import Routes from 'routes'
-import ManProvider from 'providers/Main'
 import * as SplashScreen from 'expo-splash-screen'
+import { StatusBar } from 'expo-status-bar'
+
+import ManProvider from 'providers/Main'
+import Routes from 'routes'
 
 SplashScreen.preventAutoHideAsync().catch((error: any) => error)
 

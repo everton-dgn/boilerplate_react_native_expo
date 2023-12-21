@@ -1,14 +1,14 @@
-import type { ReactNode } from 'react'
-import { Ionicons } from '@expo/vector-icons'
+import { useCallback, type ReactNode } from 'react'
+import { StyleSheet, View } from 'react-native'
+
 import {
   Poppins_400Regular,
   Poppins_500Medium,
   Poppins_600SemiBold,
   useFonts
 } from '@expo-google-fonts/poppins'
-import { useCallback } from 'react'
+import { Ionicons } from '@expo/vector-icons'
 import * as SplashScreen from 'expo-splash-screen'
-import { StyleSheet, View } from 'react-native'
 
 const S = StyleSheet.create({
   container: {
