@@ -10,7 +10,7 @@ SplashScreen.preventAutoHideAsync().catch((error: any) => error)
 const App = () => (
   <ManProvider>
     <Routes />
-    <StatusBar style="auto" />
+    <StatusBar style="light" />
   </ManProvider>
 )
 
