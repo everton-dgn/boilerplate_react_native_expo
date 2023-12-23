@@ -18,10 +18,12 @@
     "format": "prettier --cache --write src",
     "check:format": "prettier --cache --check src",
     "typecheck": "tsc --noEmit",
+    "build:check": "cd android && ./gradlew build --warning-mode all && cd ..",
     "expo:doctor": "npx expo-doctor",
-    "check:update": "yarn upgrade-interactive --latest",
-    "update:expo": "yarn add expo@latest",
+    "check:update": "npx upgrade-interactive --latest",
+    "update:expo": "npx add expo@latest",
     "update:fix": "npx expo install --fix",
+    "clear": "watchman watch-del-all && rm -rf /tmp/metro-bundler-cache-* && rm -rf /tmp/haste-map-react-native-packager-* && react-native start --reset-cache",
     "prepare": "node scripts/create-husky-files.mjs && husky install"
   },
   "husky": {

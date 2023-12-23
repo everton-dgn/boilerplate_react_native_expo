@@ -5,3 +5,6 @@ coverage
 .tsBuildInfoFile
 .eslintcache
 babel.config.js
+react-native.config.js
+metro.config.js
+index.js

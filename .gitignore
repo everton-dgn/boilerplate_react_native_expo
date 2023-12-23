@@ -1,14 +1,59 @@
-# dependencies
+# macOS
+.DS_Store
+*.pem
+
+# Xcode
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+ios/.xcode.env.local
+
+# Android/android studio/vscode
+build/
+.idea/
+.vscode/
+.gradle
+local.properties
+*.iml
+*.hprof
+.cxx/
+*.keystore
+!debug.keystore
+
+# node.js
 node_modules/
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+package-lock.json
 
-# Expo
-.expo/
-dist/
-web-build/
+# fastlane
+**/fastlane/report.xml
+**/fastlane/Preview.html
+**/fastlane/screenshots
+**/fastlane/test_output
 
-# system
-ios
-android
+# Bundle artifact
+*.jsbundle
+
+# Ruby / CocoaPods
+/ios/Pods/
+/vendor/bundle/
+
+# testing
+/coverage
 
 # Native
 *.orig.*
@@ -21,26 +66,17 @@ android
 # Metro
 .metro-health-check*
 
-# debug
-npm-debug.*
-yarn-debug.*
-yarn-error.*
-package-lock.json
-
-# macOS
-.DS_Store
-*.pem
-
-# local env files
-.env
-
 # typescript
 *.tsbuildinfo
-
-# jetbrains and vscode
-.idea/
-.vscode/
 
 # linters
 .eslintcache
 .husky
+
+# Expo
+.expo/
+dist/
+web-build/
+
+# local env files
+.env

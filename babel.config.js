@@ -13,10 +13,14 @@ module.exports = api => {
             '.ts',
             '.tsx',
             '.json',
+            '.tff',
+            '.svg',
+            '.webp',
+            '.png',
+            '.jpg',
+            '.gif',
             '.android.js',
-            '.android.tsx',
-            '.ios.js',
-            '.ios.tsx'
+            '.android.tsx'
           ]
         }
       ]
