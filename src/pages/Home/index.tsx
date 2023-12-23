@@ -12,8 +12,8 @@ export const Home = () => {
 
   return (
     <View style={S.container}>
+      <Ionicons name="home" size={32} color="green" />
       <Text>Page Home</Text>
-      <Ionicons name="md-checkmark-circle" size={32} color="green" />
       <TouchableOpacity
         label="Go to Example"
         onPress={() => {
