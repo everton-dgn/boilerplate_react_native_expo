@@ -3,20 +3,14 @@ import {
   configureObservablePersistence,
   persistObservable
 } from '@legendapp/state/persist'
-import { ObservablePersistAsyncStorage } from '@legendapp/state/persist-plugins/async-storage'
-import AsyncStorage from '@react-native-async-storage/async-storage'
+import { ObservablePersistMMKV } from '@legendapp/state/persist-plugins/mmkv'
 
 import { example } from './slices'
 
 const mergeSlices = mergeIntoObservable(example)
 
 configureObservablePersistence({
-  pluginLocal: ObservablePersistAsyncStorage,
-  localOptions: {
-    asyncStorage: {
-      AsyncStorage
-    }
-  }
+  pluginLocal: ObservablePersistMMKV
 })
 
 persistObservable(mergeSlices, {
