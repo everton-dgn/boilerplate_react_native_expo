@@ -33,6 +33,7 @@
   "dependencies": {
     "@expo-google-fonts/poppins": "^0.2.3",
     "@legendapp/state": "^2.1.4",
+    "@react-navigation/bottom-tabs": "^6.5.11",
     "@react-navigation/native": "^6.1.9",
     "@react-navigation/native-stack": "^6.9.17",
     "expo": "^49.0.21",
