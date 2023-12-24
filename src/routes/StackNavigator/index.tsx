@@ -7,8 +7,8 @@ import { screenOptionsStyles } from './config'
 const { Navigator, Screen } = createNativeStackNavigator()
 
 export const StackNavigator = () => (
-  <Navigator initialRouteName="Home" screenOptions={screenOptionsStyles}>
-    <Screen name="Home" component={Home} />
+  <Navigator initialRouteName="HomeStack" screenOptions={screenOptionsStyles}>
+    <Screen name="HomeStack" component={Home} options={{ title: 'Home' }} />
     <Screen name="Example" component={Example} />
   </Navigator>
 )

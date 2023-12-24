@@ -17,7 +17,7 @@ export const TabNavigator = () => {
 
   return (
     <NavigationContainer>
-      <Navigator initialRouteName="Home" screenOptions={getScreenOptions}>
+      <Navigator screenOptions={getScreenOptions}>
         <Screen
           name="Home"
           component={StackNavigator}
