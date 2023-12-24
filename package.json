@@ -8,6 +8,7 @@
   "repository": "https://github.com/everton-dgn/boilerplate_react_native_expo",
   "main": "src/App.tsx",
   "scripts": {
+    "dev": "expo start",
     "android": "expo run:android",
     "ios": "expo run:ios",
     "build": "eas build",
