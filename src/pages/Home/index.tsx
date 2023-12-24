@@ -12,7 +12,7 @@ export const Home = () => {
 
   return (
     <View style={S.container}>
-      <Ionicons name="home" size={32} color="green" />
+      <Ionicons name="home" size={32} color="#011fbb" />
       <Text>Page Home</Text>
       <TouchableOpacity
         label="Go to Example"
