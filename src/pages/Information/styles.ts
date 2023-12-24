@@ -9,6 +9,11 @@ const styles = StyleSheet.create({
     flex: 1,
     gap: T.spacings.giga,
     justifyContent: 'center'
+  },
+  wrapper_state: {
+    alignItems: 'center',
+    flexDirection: 'row',
+    gap: T.spacings.md
   }
 })
 
