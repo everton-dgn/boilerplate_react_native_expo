@@ -5,9 +5,9 @@ import {
 } from '@legendapp/state/persist'
 import { ObservablePersistMMKV } from '@legendapp/state/persist-plugins/mmkv'
 
-import { example } from './slices'
+import { example, notification } from './slices'
 
-const mergeSlices = mergeIntoObservable(example)
+const mergeSlices = mergeIntoObservable(example, notification)
 
 configureObservablePersistence({
   pluginLocal: ObservablePersistMMKV
