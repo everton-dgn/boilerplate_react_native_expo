@@ -2,15 +2,13 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
 import { Example, Home } from 'pages'
 
-import type { RootStackParamList } from './types'
-
 import { screenOptionsStyles } from './config'
 
-const { Navigator, Screen } = createNativeStackNavigator<RootStackParamList>()
+const { Navigator, Screen } = createNativeStackNavigator()
 
 export const StackNavigator = () => (
-  <Navigator initialRouteName="HomeStack" screenOptions={screenOptionsStyles}>
-    <Screen name="HomeStack" component={Home} options={{ title: 'Home' }} />
+  <Navigator initialRouteName="Home" screenOptions={screenOptionsStyles}>
+    <Screen name="Home" component={Home} />
     <Screen name="Example" component={Example} />
   </Navigator>
 )

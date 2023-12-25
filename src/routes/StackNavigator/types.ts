@@ -1,5 +1,5 @@
 export type RootStackParamList = {
-  HomeStack: undefined
+  Home: undefined
   Example: undefined
   Information: undefined
 }
