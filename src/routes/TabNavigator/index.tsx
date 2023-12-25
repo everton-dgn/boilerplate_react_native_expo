@@ -5,9 +5,11 @@ import { StackNavigator } from 'routes/StackNavigator'
 
 import useNotification from 'infra/store/notification'
 
+import type { RootTabParamList } from './types'
+
 import { getScreenOptions } from './config'
 
-const { Navigator, Screen } = createBottomTabNavigator()
+const { Navigator, Screen } = createBottomTabNavigator<RootTabParamList>()
 
 export const TabNavigator = () => {
   const { stateNotification } = useNotification()

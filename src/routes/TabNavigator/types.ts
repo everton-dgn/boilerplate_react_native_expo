@@ -9,3 +9,9 @@ export type TabBarIconProps = {
   color: string
   size: number
 }
+
+export type RootTabParamList = {
+  Home: undefined
+  Example: undefined
+  Information: undefined
+}

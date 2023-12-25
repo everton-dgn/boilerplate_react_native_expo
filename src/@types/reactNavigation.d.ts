@@ -1,7 +1,7 @@
-import type { ParamList } from 'routes/types'
+import type { RootTabParamList } from 'routes/TabNavigator/types'
 
 declare global {
   namespace ReactNavigation {
-    interface RootParamList extends ParamList {}
+    interface RootParamList extends RootTabParamList {}
   }
 }

@@ -1,7 +1,10 @@
 import { Ionicons } from '@expo/vector-icons'
 
-import type { ParamList } from '../types'
-import type { GetScreenOptionsProps, TabBarIconProps } from './types'
+import type {
+  RootTabParamList,
+  GetScreenOptionsProps,
+  TabBarIconProps
+} from './types'
 
 import T from 'theme'
 
@@ -18,7 +21,7 @@ const screenOptionsStyles = {
   tabBarInactiveTintColor: T.colors.gray
 } as const
 
-const icons: Record<keyof ParamList, IoniconsName> = {
+const icons: Record<keyof RootTabParamList, IoniconsName> = {
   Home: 'home',
   Example: 'chatbubble',
   Information: 'ios-information-circle'
@@ -27,7 +30,7 @@ const icons: Record<keyof ParamList, IoniconsName> = {
 export const getScreenOptions = ({ route }: GetScreenOptionsProps) =>
   ({
     tabBarIcon: ({ focused, color, size }: TabBarIconProps) => {
-      const icon = icons[route.name as keyof ParamList]
+      const icon = icons[route.name as keyof RootTabParamList]
       const prefix = focused ? '' : '-outline'
       const iconName = `${icon}${prefix}`
       return (
