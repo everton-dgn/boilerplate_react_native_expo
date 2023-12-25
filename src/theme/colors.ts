@@ -2,6 +2,7 @@ const colors = {
   black: '#000',
   blue: '#011fbb',
   blueLight: '#e9f4fe',
+  alert: '#c71b1b',
   dark: '#010509',
   disabled: '#a1a4b0',
   focus: '#007dfa99',

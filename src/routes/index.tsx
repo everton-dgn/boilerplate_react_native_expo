@@ -1,9 +1,10 @@
 import { NavigationContainer } from '@react-navigation/native'
 
 import { TabNavigator } from './TabNavigator'
+import CustomTheme from './theme'
 
 const Routes = () => (
-  <NavigationContainer>
+  <NavigationContainer theme={CustomTheme}>
     <TabNavigator />
   </NavigationContainer>
 )
