@@ -1,8 +1,8 @@
-import type { RootStackParamList } from 'routes/StackNavigator'
+import type { RootTabParamList } from 'routes/TabNavigator/types'
 
 declare global {
   namespace ReactNavigation {
-    interface RootParamList extends RootStackParamList {}
+    interface RootParamList extends RootTabParamList {}
 
     type PageProps = {
       route?: RouteProp<RootParamList, keyof RootParamList>
