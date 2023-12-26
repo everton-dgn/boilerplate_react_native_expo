@@ -17,7 +17,7 @@ export const TabNavigator = () => {
     stateNotification.counter > 0 ? stateNotification.counter : undefined
 
   return (
-    <Navigator screenOptions={getScreenOptions}>
+    <Navigator initialRouteName="HomeStack" screenOptions={getScreenOptions}>
       <Screen
         name="HomeStack"
         component={StackNavigator}
