@@ -20,7 +20,9 @@ DerivedData
 *.xcuserstate
 ios/.xcode.env.local
 
-# Android/android studio/vscode
+# Android/ios ide/vscode
+android
+ios
 build/
 .idea/
 .vscode/
